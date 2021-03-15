@@ -2,10 +2,17 @@
 
     class Home extends Controller
     {
-        public function index()
+        protected $user;
+        public function __construct()
         {
-            $name = 'Ruben';
-            $this->view('home/index', ['name' => $name]);
+            $this->user = $this->model('User');
+        }
+    
+        public function index($name = '')
+        {
+            $user = $this->user;
+            $user->name = $name;
+            $this->view('home/index', ['name' => $user->name]);
         }
     }
 
