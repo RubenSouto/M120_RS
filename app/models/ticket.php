@@ -9,6 +9,11 @@
 
         public function __construct()
         {
+            $von = $_GET['von'];
+            $bis = $_GET['bis'];
+            $retour = $_GET['retour'];
+            $mk = $_GET['mk'];
+            $datum = $_GET['datum'];
         }
     }
 ?>

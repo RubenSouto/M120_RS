@@ -7,6 +7,7 @@ class Controller
         //Load header
         require_once('../app/views/_style/header.php');
 
+        //Load body
         require_once('../app/views/'.$view.'.php');
 
         //Load footer

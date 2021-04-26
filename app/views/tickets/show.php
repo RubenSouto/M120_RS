@@ -1,3 +1,4 @@
 <?php
-    echo $data['name'];
+    //echo $data['name'];
+    echo "hello";
 ?>
