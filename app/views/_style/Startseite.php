@@ -29,9 +29,9 @@
         <li class="list-group-item">Locarno</li>
       </ul>
     </div>
-    <form action="../../models/ticket.php" method="post">
-      Vorname: <input type="text" name="vorname" /><br />
-      Namename: <input type="text" name="nachname" /><br />
+    <form action="Kauf_Seite/" method="post">
+      Vorname: <input type="text" name="von" /><br />
+      Namename: <input type="text" name="bis" /><br />
       <input type="Submit" value="Absenden" />
     </form>
   </div>

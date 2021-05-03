@@ -1,4 +1,3 @@
 <?php
-    //echo $data['name'];
-    echo "hello";
+    echo $data['von'] + ", " + $data['bis'] + ", " + $data['retour'] + ", " + $data['mk'] + ", " + $data['datum'];
 ?>

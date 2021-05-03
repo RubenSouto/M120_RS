@@ -1,3 +1,9 @@
+<?php
+
+?>
+
+
+
 <div style="display: flexbox; width:100%">
     <div style="width:50%">
       <a>Von</a>
@@ -29,5 +35,12 @@
         <li class="list-group-item">Locarno</li>
       </ul>
     </div>
-    <button>Test</button>
+    <form action="../Uebersicht/" method="post">
+      <input type = "hidden" name = "von" value = "nig" />
+      <input type = "hidden" name = "bis" value = "ger" />
+      Retour: <input type="text" name="retour" /><br />
+      Mehrfahrtenkarte: <input type="text" name="mk" /><br />
+      Datum: <input type="text" name="datum" /><br />
+      <input type="Submit" value="Absenden" />
+    </form>
   </div>

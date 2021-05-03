@@ -5,27 +5,27 @@
         protected $ticket;
         public function __construct()
         {
-            $this->ticket = $this->model('ticket');
+            $this->ticket = $this->model('ticket');   
         }
     
         public function index($name = '')
         {
+            $this->ticket->updateData();
             $path = "home/index";
 
+            if ($name == '') {
+                $this->view('/_style/Startseite');
+            }
             if ($name == 'Kauf_Seite') {
                 $this->view('/_style/Kauf_Seite');
             }
             if ($name == 'Uebersicht') {
                 $this->view('/_style/Uebersicht');
-                $path = "tickets/show";
-                $this->ticket->von = "lul";
-                $this->view($path, ['name' => $this->ticket->von]);
+                $this->view('tickets/show', ['von' => $this->ticket->von, 'bis' => $this->ticket->bis, 'retour' => $this->ticket->retour, 'mk' => $this->ticket->mk, 'datum' => $this->ticket->datum]);
             }
             if ($name == 'Hilfe') {
                 $this->view('/_style/Hilfe');
             }
-            
-            $this->view($path, ['name' => $name]);
         }
     }
 

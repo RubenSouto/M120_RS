@@ -9,11 +9,16 @@
 
         public function __construct()
         {
-            $von = $_GET['von'];
-            $bis = $_GET['bis'];
-            $retour = $_GET['retour'];
-            $mk = $_GET['mk'];
-            $datum = $_GET['datum'];
+
+        }
+
+        public function updateData()
+        {
+            $this->von = isset($_POST['von']) ? $_POST['von']: "";
+            $this->bis = isset($_POST['bis']) ? $_POST['bis']: "";
+            $this->retour = isset($_POST['retour']) ? $_POST['retour']: "";
+            $this->mk = isset($_POST['mk']) ? $_POST['mk']: "";
+            $this->datum = isset($_POST['datum']) ? $_POST['datum']: "";
         }
     }
 ?>
