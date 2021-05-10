@@ -1,46 +1,41 @@
 <?php
-
+  $von = isset($_POST['von']) ? $_POST['von']: "";
+  $bis = isset($_POST['bis']) ? $_POST['bis']: "";
 ?>
 
+<!-- style="display: flexbox; width:100%" -->
 
+<div>
+  <form action="../Uebersicht/" method="post">
 
-<div style="display: flexbox; width:100%">
-    <div style="width:50%">
-      <a>Von</a>
-      <ul class="list-group">
-        <li class="list-group-item">Frauenfeld</li>
-        <li class="list-group-item">Weinfelden</li>
-        <li class="list-group-item">Zürich</li>
-        <li class="list-group-item">Felben-Wellhausen</li>
-        <li class="list-group-item">Hüttlingen</li>
-        <li class="list-group-item">Bern</li>
-        <li class="list-group-item">Basel</li>
-        <li class="list-group-item">Genf</li>
-        <li class="list-group-item">Luzern</li>
-        <li class="list-group-item">Locarno</li>
-      </ul>
+    <input type = "hidden" name = "von" value = "<?php echo $von?>"  />
+    <input type = "hidden" name = "bis" value = "<?php echo $bis?>" />
+
+    <div class="form-group row">
+      <div class="form-check">
+        <input class="form-check-input form-control-lg" type="checkbox" name="retour">
+        <label class="form-check-label form-control-lg" for="retourCheck">
+          Retour
+        </label>
+      </div>
     </div>
-    <div style="width:50%">
-      <a>Bis</a>
-      <ul class="list-group">
-        <li class="list-group-item">Frauenfeld</li>
-        <li class="list-group-item">Weinfelden</li>
-        <li class="list-group-item">Zürich</li>
-        <li class="list-group-item">Felben-Wellhausen</li>
-        <li class="list-group-item">Hüttlingen</li>
-        <li class="list-group-item">Bern</li>
-        <li class="list-group-item">Basel</li>
-        <li class="list-group-item">Genf</li>
-        <li class="list-group-item">Luzern</li>
-        <li class="list-group-item">Locarno</li>
-      </ul>
+    <div class="form-group row">
+      <div class="form-check">
+        <input class="form-check-input form-control-lg" type="checkbox" name="mk">
+        <label class="form-check-label form-control-lg" for="mkCheck">
+          Mehrfahrtenkarte
+        </label>
+      </div>
     </div>
-    <form action="../Uebersicht/" method="post">
-      <input type = "hidden" name = "von" value = "nig" />
-      <input type = "hidden" name = "bis" value = "ger" />
-      Retour: <input type="text" name="retour" /><br />
-      Mehrfahrtenkarte: <input type="text" name="mk" /><br />
-      Datum: <input type="text" name="datum" /><br />
-      <input type="Submit" value="Absenden" />
-    </form>
-  </div>
+    <div class="form-group row">
+      <label for="example-date-input" class="col-2 col-form-label">Date</label>
+      <div class="col-10">
+        <input class="form-control form-control-lg" type="date" name="datum">
+      </div>
+    </div>
+    <!-- Retour: <input type="text" name="retour" /><br />
+    Mehrfahrtenkarte: <input type="text" name="mk" /><br /> -->
+    Datum: <input type="text" name="datum" /><br />
+    <input type="Submit" value="Absenden" />
+  </form>
+</div>

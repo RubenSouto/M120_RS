@@ -18,10 +18,11 @@
             }
             if ($name == 'Kauf_Seite') {
                 $this->view('/_style/Kauf_Seite');
+                $this->view($path, ['von' => $this->ticket->von, 'bis' => $this->ticket->bis, 'retour' => $this->ticket->retour, 'mk' => $this->ticket->mk, 'datum' => $this->ticket->datum]);
             }
             if ($name == 'Uebersicht') {
                 $this->view('/_style/Uebersicht');
-                $this->view('tickets/show', ['von' => $this->ticket->von, 'bis' => $this->ticket->bis, 'retour' => $this->ticket->retour, 'mk' => $this->ticket->mk, 'datum' => $this->ticket->datum]);
+                $this->view($path, ['von' => $this->ticket->von, 'bis' => $this->ticket->bis, 'retour' => $this->ticket->retour, 'mk' => $this->ticket->mk, 'datum' => $this->ticket->datum]);
             }
             if ($name == 'Hilfe') {
                 $this->view('/_style/Hilfe');

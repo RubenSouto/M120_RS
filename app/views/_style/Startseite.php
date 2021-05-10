@@ -1,37 +1,36 @@
 <div style="display: flexbox; width:100%">
     <div style="width:50%">
-      <a>Von</a>
-      <ul class="list-group">
-        <li class="list-group-item">Frauenfeld</li>
-        <li class="list-group-item">Weinfelden</li>
-        <li class="list-group-item">Zürich</li>
-        <li class="list-group-item">Felben-Wellhausen</li>
-        <li class="list-group-item">Hüttlingen</li>
-        <li class="list-group-item">Bern</li>
-        <li class="list-group-item">Basel</li>
-        <li class="list-group-item">Genf</li>
-        <li class="list-group-item">Luzern</li>
-        <li class="list-group-item">Locarno</li>
-      </ul>
-    </div>
-    <div style="width:50%">
-      <a>Bis</a>
-      <ul class="list-group">
-        <li class="list-group-item">Frauenfeld</li>
-        <li class="list-group-item">Weinfelden</li>
-        <li class="list-group-item">Zürich</li>
-        <li class="list-group-item">Felben-Wellhausen</li>
-        <li class="list-group-item">Hüttlingen</li>
-        <li class="list-group-item">Bern</li>
-        <li class="list-group-item">Basel</li>
-        <li class="list-group-item">Genf</li>
-        <li class="list-group-item">Luzern</li>
-        <li class="list-group-item">Locarno</li>
-      </ul>
-    </div>
     <form action="Kauf_Seite/" method="post">
-      Vorname: <input type="text" name="von" /><br />
-      Namename: <input type="text" name="bis" /><br />
-      <input type="Submit" value="Absenden" />
+      <div class="form-group form-control-lg">
+        <label for="Abfahrtsort">Von</label>
+          <select class="form-control" name="von">
+            <option>Frauenfeld</option>
+            <option>Weinfelden</option>
+            <option>Zürich</option>
+            <option>Felben-Wellhausen</option>
+            <option>Hüttlingen</option>
+            <option>Bern</option>
+            <option>Basel</option>
+            <option>Genf</option>
+            <option>Luzern</option>
+            <option>Locarno</option>
+          </select>
+      </div>
+      <div class="form-group form-control-lg">
+        <label for="Zielort">Bis</label>
+          <select class="form-control" name="bis">
+            <option>Frauenfeld</option>
+            <option>Weinfelden</option>
+            <option>Zürich</option>
+            <option>Felben-Wellhausen</option>
+            <option>Hüttlingen</option>
+            <option>Bern</option>
+            <option>Basel</option>
+            <option>Genf</option>
+            <option>Luzern</option>
+            <option>Locarno</option>
+          </select>
+      </div>
+      <button type="Submit" class="btn btn-primary mb-2">Weiter</button>
     </form>
   </div>
