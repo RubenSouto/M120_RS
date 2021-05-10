@@ -2,5 +2,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
   </body>
-    <footer>Someone famous in</footer>
+    <footer>
+      <form action="http://localhost/M120_RS/public/Hilfe">
+        <input type="submit" class="btn btn-warning" value="Hilfe" />
+      </form>
+
+      <form action="http://localhost/M120_RS/public/Startseite">
+        <input type="submit" class="btn btn-danger" value="Abbrechen" />
+      </form>
+    </footer>
 </html>

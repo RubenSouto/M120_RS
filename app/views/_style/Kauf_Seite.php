@@ -1,6 +1,6 @@
 <?php
-  $von = isset($_POST['von']) ? $_POST['von']: "";
-  $bis = isset($_POST['bis']) ? $_POST['bis']: "";
+  $von = $data['von'];
+  $bis = $data['bis'];
 ?>
 
 <!-- style="display: flexbox; width:100%" -->
@@ -15,10 +15,11 @@
       <div class="form-check">
         <input class="form-check-input form-control-lg" type="checkbox" name="retour">
         <label class="form-check-label form-control-lg" for="retourCheck">
-          Retour
+          Retour (Hin ist Standart)
         </label>
       </div>
     </div>
+    
     <div class="form-group row">
       <div class="form-check">
         <input class="form-check-input form-control-lg" type="checkbox" name="mk">
@@ -27,15 +28,39 @@
         </label>
       </div>
     </div>
+
+    <div class="form-group row">
+      <div class="form-check">
+        <input class="form-check-input form-control-lg" type="checkbox" name="klasse">
+        <label class="form-check-label form-control-lg" for="klasseCheck">
+          1. Klasse (2. ist standart)
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group form-control-lg">
+        <label for="Anzahl">Anzahl Personen</label>
+        <select class="form-control" name="anzahl">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+    </div>
+
     <div class="form-group row">
       <label for="example-date-input" class="col-2 col-form-label">Date</label>
       <div class="col-10">
-        <input class="form-control form-control-lg" type="date" name="datum">
+        <input class="form-control form-control-lg" type="date" name="datum" value="">
       </div>
     </div>
-    <!-- Retour: <input type="text" name="retour" /><br />
-    Mehrfahrtenkarte: <input type="text" name="mk" /><br /> -->
-    Datum: <input type="text" name="datum" /><br />
-    <input type="Submit" value="Absenden" />
+
+    <input type="Submit" class="btn btn-primary btn-lg btn-block" value="Weiter" />
   </form>
 </div>

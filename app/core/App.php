@@ -4,7 +4,7 @@ class App
 {
     protected $controller = 'home';
     protected $method = 'index';
-    protected $params = [];
+    protected $params = 'Startseite';
 
     public function __construct()
     {

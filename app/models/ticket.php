@@ -6,6 +6,9 @@
         public $retour;
         public $mk;
         public $datum;
+        public $klasse;
+        public $anzahl;
+        public $erm;
 
         public function __construct()
         {
@@ -19,6 +22,9 @@
             $this->retour = isset($_POST['retour']) ? $_POST['retour']: "";
             $this->mk = isset($_POST['mk']) ? $_POST['mk']: "";
             $this->datum = isset($_POST['datum']) ? $_POST['datum']: "";
+            $this->klasse = isset($_POST['klasse']) ? $_POST['klasse']: "";
+            $this->anzahl = isset($_POST['anzahl']) ? $_POST['anzahl']: "";
+            $this->erm = isset($_POST['erm']) ? $_POST['erm']: "";
         }
     }
 ?>
