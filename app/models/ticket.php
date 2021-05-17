@@ -50,7 +50,7 @@
 
         public function vonBisCheck()
         {
-            if ($this->von == $this->bis) {
+            if ($this->von == $this->bis && $this->von != "") {
                 return false;
             }
             return true;

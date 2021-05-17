@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <style>
-    * {
-      margin: auto;
-      width: 100%;
-      padding: 1%;
-    }
-  </style>
+
+    <style>
+      * {
+        padding: 1%;
+      }
+    </style>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,4 +16,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>Billetautomat</title>
+
   </head>
+  <body>

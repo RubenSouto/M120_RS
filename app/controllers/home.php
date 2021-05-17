@@ -15,10 +15,6 @@
 
             if ($name == 'Startseite') {
                 $this->view('/_style/Startseite');
-                if ($fehler != '') {
-                    $path = "tickets/show";
-                    $this->view($path, ['fehler' => "Sie müssen zwei Verschiedene Orte angeben!"]);
-                }
             }
 
             if ($name == 'Kauf_Seite') {
@@ -26,7 +22,7 @@
                     $this->view('/_style/Kauf_Seite', ['von' => $this->ticket->von, 'bis' => $this->ticket->bis]);
                 }
                 else {
-                    header("LOCATION: http://localhost/M120_RS/public/Startseite/fehler");
+                    header("LOCATION: http://localhost/M120_RS/public/Startseite");
                 }
             }
 

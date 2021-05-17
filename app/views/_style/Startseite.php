@@ -1,8 +1,13 @@
-<div style="display: flexbox; width:100%">
+<div class="container-fluid">
 
   <form action="Kauf_Seite/" method="post">
-    <div class="form-group form-control-lg">
-      <label for="Abfahrtsort">Von</label>
+
+    <div class="alert alert-primary" role="alert">
+      Abfahrtsort und Ankunftsort müssen verschieden sein.
+    </div>
+
+    <div class="form-control-lg row align-items-start">
+      <label for="von">Von</label>
         <select class="form-control" name="von">
           <option>Frauenfeld</option>
           <option>Weinfelden</option>
@@ -17,8 +22,8 @@
         </select>
     </div>
 
-    <div class="form-group form-control-lg">
-      <label for="Zielort">Bis</label>
+    <div class="form-control-lg row align-items-start">
+      <label for="bis">Bis</label>
         <select class="form-control" name="bis">
           <option>Frauenfeld</option>
           <option>Weinfelden</option>
@@ -33,7 +38,9 @@
         </select>
     </div>
 
-    <button type="Submit" class="btn btn-primary btn-lg btn-block" >Weiter</button>
+    <div class="row">
+      <button type="Submit" class="btn btn-primary btn-lg btn-block">Weiter</button>
+    </div>
 
   </form>
 </div>

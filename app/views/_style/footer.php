@@ -3,12 +3,23 @@
 
   </body>
     <footer>
-      <form action="http://localhost/M120_RS/public/Hilfe">
-        <input type="submit" class="btn btn-warning" value="Hilfe" />
-      </form>
 
-      <form action="http://localhost/M120_RS/public/Startseite">
-        <input type="submit" class="btn btn-danger" value="Abbrechen" />
-      </form>
+      <div class="row justify-content-start">
+        <div class="col align-self-start">
+          <form action="http://localhost/M120_RS/public/Hilfe">
+            <input type="submit" class="btn btn-warning btn-lg btn-block" value="Hilfe" />
+          </form>
+        </div>
+
+        <div class="col align-self-center">
+        </div>
+
+        <div class="col align-self-end">
+          <form action="http://localhost/M120_RS/public/Startseite" class="float-right">
+            <input type="submit" class="btn btn-danger btn-lg btn-block" value="Abbrechen" />
+          </form>
+        </div>
+      </div>
+
     </footer>
 </html>
