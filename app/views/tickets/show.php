@@ -1,4 +1,3 @@
-<!-- für pdf generierung -->
 <?php
-
+    echo $data['fehler'];
 ?>

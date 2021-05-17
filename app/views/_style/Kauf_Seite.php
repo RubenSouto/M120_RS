@@ -1,6 +1,7 @@
 <?php
   $von = $data['von'];
   $bis = $data['bis'];
+  $defaultDate = date('Y-m-d');
 ?>
 
 <!-- style="display: flexbox; width:100%" -->
@@ -57,7 +58,7 @@
     <div class="form-group row">
       <label for="example-date-input" class="col-2 col-form-label">Date</label>
       <div class="col-10">
-        <input class="form-control form-control-lg" type="date" name="datum" value="">
+        <input class="form-control form-control-lg" type="date" name="datum" value="<?php echo $defaultDate?>">
       </div>
     </div>
 

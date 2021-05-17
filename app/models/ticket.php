@@ -9,6 +9,8 @@
         public $klasse;
         public $anzahl;
         public $erm;
+        public $preis;
+        private $streckenPreis = 10;
 
         public function __construct()
         {
@@ -25,6 +27,33 @@
             $this->klasse = isset($_POST['klasse']) ? $_POST['klasse']: "";
             $this->anzahl = isset($_POST['anzahl']) ? $_POST['anzahl']: "";
             $this->erm = isset($_POST['erm']) ? $_POST['erm']: "";
+            $this->preis = isset($_POST['preis']) ? $_POST['preis']: "";
+        }
+
+        public function berechnePreis()
+        {
+            $this->preis = $this->streckenPreis * $this->anzahl;
+
+            if($this->mk != ""){
+                $this->preis = $this->preis * 6;
+            }
+
+            if($this->klasse != ""){
+                $this->preis = $this->preis * 2;
+            }
+
+            if($this->retour != ""){
+                $this->preis = $this->preis * 2;
+            }
+            
+        }
+
+        public function vonBisCheck()
+        {
+            if ($this->von == $this->bis) {
+                return false;
+            }
+            return true;
         }
     }
 ?>

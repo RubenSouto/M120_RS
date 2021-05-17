@@ -8,4 +8,7 @@
   $klasse = $data['klasse'];
   $anzahl = $data['anzahl'];
   $erm = $data['erm'];
+  $preis = $data['preis'];
+
+  echo $preis;
 ?>
