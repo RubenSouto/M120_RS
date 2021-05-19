@@ -46,6 +46,11 @@
                 $this->preis = $this->preis * 2;
             }
             
+            if ($this->erm != "" || $this->erm != "Keine") {
+                if ($this->erm == "Halbtax") {
+                    $this->preis = $this->preis / 2;
+                }
+            }
         }
 
         public function vonBisCheck()

@@ -2,13 +2,15 @@
 
   <form action="Kauf_Seite/" method="post">
 
-    <div class="alert alert-primary" role="alert">
-      Abfahrtsort und Ankunftsort müssen verschieden sein.
+    <div class="row form-control-lg align-items-start">
+      <div class="alert alert-primary" role="alert">
+        Abfahrtsort und Ankunftsort müssen verschieden sein.
+      </div>
     </div>
 
-    <div class="form-control-lg row align-items-start">
+    <div class="row form-control-lg align-items-start">
       <label for="von">Von</label>
-        <select class="form-control" name="von">
+        <select class="form-control form-control-lg" name="von">
           <option>Frauenfeld</option>
           <option>Weinfelden</option>
           <option>Zürich</option>
@@ -22,9 +24,9 @@
         </select>
     </div>
 
-    <div class="form-control-lg row align-items-start">
+    <div class="row form-control-lg align-items-start">
       <label for="bis">Bis</label>
-        <select class="form-control" name="bis">
+        <select class="form-control form-control-lg" name="bis">
           <option>Frauenfeld</option>
           <option>Weinfelden</option>
           <option>Zürich</option>
@@ -43,4 +45,5 @@
     </div>
 
   </form>
+
 </div>

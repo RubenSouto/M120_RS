@@ -5,6 +5,7 @@
 ?>
 
 <div class="container-fluid">
+  
   <form action="../Uebersicht/" method="post">
 
     <input type = "hidden" name = "von" value = "<?php echo $von?>"  />
@@ -12,10 +13,8 @@
 
     <div class="row align-items-start">
       <div class="col align-self-start">
-        <input class="form-check-input form-control-lg" type="checkbox" name="retour">
-      </div>
-      <div class="col align-self-center">
-        <label class="form-check-label form-control-lg" for="retourCheck">
+        <input class="form-check-input" type="checkbox" name="retour">
+        <label class="form-control-lg">
           Retour (Hin ist Standart)
         </label>
       </div>
@@ -23,10 +22,8 @@
     
     <div class="row align-items-start">
       <div class="col align-self-start">
-        <input class="form-check-input form-control-lg" type="checkbox" name="mk">
-      </div>
-      <div class="col align-self-center">
-        <label class="form-check-label form-control-lg" for="mkCheck">
+        <input class="form-check-input" type="checkbox" name="mk">
+        <label class="form-check-label form-control-lg">
           Mehrfahrtenkarte
         </label>
       </div>
@@ -34,18 +31,16 @@
 
     <div class="row align-items-start">
       <div class="col align-self-start">
-          <input class="form-check-input form-control-lg" type="checkbox" name="klasse">
-      </div>
-      <div class="col align-self-center">
-        <label class="form-check-label form-control-lg" for="klasseCheck">
+          <input class="form-check-input" type="checkbox" name="klasse">
+          <label class="form-check-label form-control-lg">
           1. Klasse (2. ist standart)
-        </label>
+          </label>
       </div>
     </div>
 
     <div class="form-control-lg row align-items-start">
         <label for="anzahl">Anzahl Personen</label>
-        <select class="form-control" name="anzahl">
+        <select class="form-control form-control-lg" name="anzahl">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -60,7 +55,15 @@
     </div>
 
     <div class="form-control-lg row align-items-start">
-      <label for="datum">Date</label>
+        <label for="anzahl">Ermässigungen</label>
+        <select class="form-control form-control-lg" name="erm">
+          <option>Keine</option>
+          <option>Halbtax</option>
+        </select>
+    </div>
+
+    <div class="row align-items-start form-control-lg">
+      <label for="datum">Gültig ab/an</label>
       <input class="form-control form-control-lg" type="date" name="datum" value="<?php echo $defaultDate?>">
     </div>
 

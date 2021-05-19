@@ -13,73 +13,73 @@
 
 <div class="container-fluid">
 
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $bis?>">
+  <form action="http://localhost/M120_RS/public/Startseite">
+    <div class="row justify-content-center border">
+      <div class="col-4">
+        <div class="input-group input-group-lg" >
+          <span class="input-group-text">Verbindung:</span>
+          <input type="text" class="form-control" value="<?php echo $von?>" readonly>
+          <input type="text" class="form-control" value="<?php echo $bis?>" readonly>
+        </div>
+      </div>
     </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $von?>">
-    </div>
-  </div>
 
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <label class="col-sm-2 col-form-label">Retour</label>  
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">Retour</span>
+          <input type="text" class="form-control" value="<?php echo $retour?>" readonly>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">Mehrfahrtenkarte</span>
+          <input type="text" class="form-control" value="<?php echo $mk?>" readonly>
+        </div>
+      </div>
     </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $retour?>">
-    </div>
-  </div>
 
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <label class="col-sm-2 col-form-label">Mehrfahrtenkarte</label>  
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">1. Klasse</span>
+          <input type="text" class="form-control" value="<?php echo $klasse?>" readonly>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">Anzahl</span>
+          <input type="text" class="form-control" value="<?php echo $anzahl?>" readonly>
+        </div>
+      </div>
     </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $mk?>">
-    </div>
-  </div>
 
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <label class="col-sm-2 col-form-label">1. Klasse</label>  
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">Ermässigung</span>
+          <input type="text" class="form-control" value="<?php echo $erm?>" readonly>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">Gültig ab/an</span>
+          <input type="text" class="form-control" value="<?php echo $datum?>" readonly>
+        </div>
+      </div>
     </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $klasse?>">
-    </div>
-  </div>
 
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <label class="col-sm-2 col-form-label">Anzahl</label>  
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text">Preis</span>
+          <input type="text" class="form-control" value="<?php echo $preis?>" readonly>
+        </div>
+      </div>
     </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $anzahl?>">
-    </div>
-  </div>
 
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <label class="col-sm-2 col-form-label">Datum</label>  
+    <div class="row">
+        <input type="Submit" class="btn btn-primary btn-lg btn-block" value="Daten stimmen"/>
     </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $datum?>">
-    </div>
-  </div>
-
-  <!-- Platz für Datenbestätigung -->
-
-  <div class="row align-items-start">
-    <div class="col align-self-start">
-      <label class="col-sm-2 col-form-label">Preis</label>  
-    </div>
-    <div class="col align-self-center">
-      <input type="text" readonly class="form-control-plaintext" value="<?php echo $preis?>">
-    </div>
-  </div>
-
-  <div class="row">
-      <input type="Submit" class="btn btn-primary btn-lg btn-block" value="Schiessen"/>
-  </div>
-
+  </form>
 </div>
