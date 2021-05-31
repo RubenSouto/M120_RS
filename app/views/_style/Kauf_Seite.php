@@ -59,6 +59,8 @@
         <select class="form-control form-control-lg" name="erm">
           <option>Keine</option>
           <option>Halbtax</option>
+          <option>Ticket ist für Kind unter 6 Jahren (fahren gratis)</option>
+          <option>Ticket ist für Kind zwischen 6-16 Jahren (halber Preis)</option>
         </select>
     </div>
 

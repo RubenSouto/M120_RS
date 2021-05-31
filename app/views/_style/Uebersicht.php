@@ -79,7 +79,7 @@
     </div>
 
     <div class="row">
-        <input type="Submit" class="btn btn-primary btn-lg btn-block" value="Daten stimmen"/>
+        <input type="Submit" class="btn btn-primary btn-lg btn-block" value="Kaufen"/>
     </div>
   </form>
 </div>
